@@ -1,0 +1,47 @@
+
+.home-page-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.description-container{
+    width: 721;
+    height: 168;
+    top: 292px;
+    left: 360px;
+}
+
+
+.heading{
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #252020;
+    font-weight: 300;
+}
+
+.description{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 40px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #252020;
+}
+
+@media screen and (max-width: 767px) {
+    .heading{
+        font-size: 24px;
+        font-weight: 400;
+    }
+    
+    .description{
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
