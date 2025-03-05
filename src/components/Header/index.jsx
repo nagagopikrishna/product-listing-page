@@ -71,7 +71,6 @@ const Header = () =>(
                     <FaRegHeart size={20} color="black"/>
                     <HiOutlineShoppingBag size={20} color="black"/>
                 </ul>
-                
             </div>
         </div>
 
