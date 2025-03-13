@@ -1,3 +1,4 @@
+import { FaRegHeart } from "react-icons/fa";
 import './index.css'
 
 const Products = (props) =>{
@@ -8,7 +9,10 @@ const Products = (props) =>{
         <li className='item-container'>
             <img src={image} alt={title} className='product-image'/>
             <h1 className='product-name'>{title}</h1>
-            <p className='product-price'>price: {price}</p>
+            <div className="sub-item-description">
+                <p className='product-price'>price: {price}</p>
+                <FaRegHeart color={"#292D32"} size={20}/>
+            </div>
         </li>
     )
 }

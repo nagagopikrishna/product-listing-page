@@ -64,3 +64,10 @@
 
     }
 }
+
+
+.sub-item-description{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}

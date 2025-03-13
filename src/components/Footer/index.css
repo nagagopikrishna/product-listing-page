@@ -1,0 +1,200 @@
+.footer-section-container{
+    max-height: 750px;
+    padding: 60px;
+    background-color: #000000;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+.sub-section-1{
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    gap: 220px;
+}
+
+.header-footer-list{
+    display: flex;
+    align-items: center;
+    gap: 270px;
+    margin-top: 50px;
+}
+
+.items-container{
+    display: flex;
+    gap: 240px;
+    margin-top: 10px;
+}
+
+.items-container, li{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    margin-bottom: 20px;
+}
+
+.footer-header{
+    /* font-family: Simplon Norm; */
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.footer-header{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+.input-email{
+    width: 384px;
+    height: 47px;
+    padding-top: 14px;
+    padding-right: 24px;
+    padding-bottom: 14px;
+    padding-left: 24px;
+    gap: 8px;
+}
+
+.subscribe-button{
+    border: 1.14px solid #FFFFFF;
+    background: #000000;
+    width: 184px;
+    height: 48px;
+    left: 400px;
+    opacity: 0.3;
+    border-radius: 5px;
+    border-width: 1.14px;
+    /* font-family: Simplon Norm; */
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-left: 20px;
+
+}
+
+.currency-container{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.contact-heading{
+    /* font-family: Simplon Norm; */
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.contact{
+    /* font-family: Simplon Norm; */
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+.currency-heading{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}   
+
+.currency-type{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 1px;
+    vertical-align: middle;
+
+}
+
+.currency-image{
+    border-radius: 100%;
+    width: 24px;
+    height: 24px;
+}
+
+.currency-description{
+    /* font-family: Simplon Norm; */
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+
+}
+
+.items-header{
+    /* font-family: Simplon Norm; */
+    font-weight: 700;
+    font-size: 24.71px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #FFFFFF;
+}
+
+
+.copy-right-description{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.social-media-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 70px;
+}
+
+.social-media-icons{
+    color: #FFFFFF;
+    border: 1px #FFFFFF solid;
+    padding: 5px;
+    border-radius: 100%;
+    size: 18px;
+}
+
+.payment-accepts{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #FFFFFF;
+}
+
+.accepts{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}   

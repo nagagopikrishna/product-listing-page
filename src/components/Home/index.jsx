@@ -5,6 +5,7 @@ import Header from "../Header"
 import Filters from "../Filters"
 import './index.css'
 import Products from "../Products"
+import Footer from "../Footer"
 
 const Home = () =>
 {   
@@ -30,7 +31,6 @@ const Home = () =>
                 <h1 className="heading"> DISCOVER OUR PRODUCTS </h1>
                 <p className="description"> Lorem ipsum dolor sit amet consectetur. Amet est posuere rhoncus scelerisque. Dolor integer scelerisque nibh amet mi ut elementum dolor.</p>
             </div>
-            
             <div className="filters-section-container">
                 <Filters/>
             </div>
@@ -44,6 +44,7 @@ const Home = () =>
                 </ul>
             </div>
         </div>
+        <Footer/>
     </>
 
 )
