@@ -2,7 +2,8 @@ import { FaLinkedin, FaInstagramSquare } from "react-icons/fa";
 import './index.css'
 
 const Footer = () =>(
-    <div className='footer-section-container'>
+    <>
+    <div className='footer-section-container-lg'>
         <div className='sub-section-1'>
             <div>
                 <h1 className='footer-header'> Be the first to know </h1>
@@ -64,6 +65,65 @@ const Footer = () =>(
             <p className='copy-right-description'> Copyright © 2023 mettamuse. All rights reserved. </p>
         </div>
     </div>
+    <div className="footer-section-container-sm">
+        <h1 className='footer-header'> Be the first to know </h1>
+        <p className='footer-description'> Lorem Ipsum is simply dummy text of the printing and typesetting industry. this is simply dummy text. </p>
+        <div>
+            <input type='search' placeholder='Enter your e-mail...' className='input-email'/>
+            <button type='button' className='subscribe-button'> Subscribe </button>
+        </div>
+        <hr className="line"/>
+        <h1 className='contact-heading'> CONTACT US </h1>
+        <div className="contact-details-sm">
+            <p className='contact'> +44 221 133 5360 </p>
+            <img src='https://res.cloudinary.com/ddc7e5e7s/image/upload/v1741659009/Star_1_t5kmko.png' alt='star'/>
+            <p className='contact'> customercare@mettamuse.com </p>
+        </div>
+        <hr className="line"/>
+        <h1 className='currency-heading'> Currency </h1>
+        <div className='currency-container'>
+            <img src='https://res.cloudinary.com/ddc7e5e7s/image/upload/v1741658903/Group_imjvt0.png' alt='USD' className='currency-image'/>
+            <img src='https://res.cloudinary.com/ddc7e5e7s/image/upload/v1741659009/Star_1_t5kmko.png' alt='star'/>
+            <h1 className='currency-type'> USD </h1>
+        </div>
+        <hr className="line"/>
+        <select className="selector-element">
+            <option> mettā muse </option>
+            <option> About Us </option>
+            <option> Stories </option>
+            <option> Artisans </option>
+            <option> Boutiques </option>
+            <option> Contact Us </option>
+            <option> EU Compliances Docs </option>
+        </select>
+        <hr className="line"/>
+        <select className="selector-element">
+            <option> Quick Links </option>
+            <option> Orders & Shipping </option>
+            <option> Join/Login as a Seller </option>
+            <option> Payment & Pricing </option>
+            <option> Return & Refunds </option>
+            <option> FAQs </option>
+            <option> Privacy Policy </option>
+            <option> Terms & Conditions </option>
+            <option> EU Compliances Docs </option>
+        </select>
+        <hr className="line"/>
+        <select className="selector-element">
+            <option> Follow Us </option>
+            <option className="social-media-container">
+                <FaInstagramSquare className="social-media-icons"/>
+                <FaLinkedin className="social-media-icons"/>
+            </option>
+            <option> EU Compliances Docs </option>
+        </select>
+        <hr className="line"/>
+        <h1 className="payment-accepts">mettā muse <span className="accepts"> Accepts</span></h1>
+        <img src="https://res.cloudinary.com/ddc7e5e7s/image/upload/v1741863397/Frame_136278_jpvygd.png" alt="payments" className="payments"/>
+        <p className='copy-right-description'> Copyright © 2023 mettamuse. All rights reserved. </p>
+    </div>
+
+    </>
 )
 
 export default Footer

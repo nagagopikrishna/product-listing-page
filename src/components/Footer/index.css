@@ -1,9 +1,17 @@
-.footer-section-container{
+.footer-section-container-lg{
     max-height: 750px;
     padding: 60px;
     background-color: #000000;
     padding-left: 90px;
     padding-right: 90px;
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .footer-section-container-lg{
+        display: none;
+    }
 }
 
 .sub-section-1{
@@ -198,3 +206,101 @@
     text-transform: uppercase;
     color: #FFFFFF;
 }   
+
+
+.footer-section-container-sm{
+    max-height: 699px;
+    background-color: #000000;
+    padding: 20px;
+    margin-top: 20px;
+}   
+
+
+@media screen and (min-width: 768px) {
+    .footer-section-container-sm{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .footer-header{
+        font-size: 16px;
+    }
+
+    .footer-description{
+        font-size: 14px;
+    }
+
+    .input-email{
+        width: 226px;
+        height: 47px;
+        gap: 8px;
+        padding-top: 14px;
+        padding-right: 24px;
+        padding-bottom: 14px;
+        padding-left: 24px;
+
+    }
+
+    .subscribe-button{
+        width: 109px;
+        height: 48px;
+        left: 234px;
+        opacity: 0.3;
+        border-radius: 5px;
+        border-width: 1.14px;
+        font-size: 16px;
+    }
+
+    .contact-heading{
+        font-size: 16px;
+    }
+
+    .contact{
+        font-size: 14px;
+    }
+
+    .currency-heading{
+        font-size: 16px;
+    }
+    .payment-accepts{
+        font-size: 14px;
+    }
+    .accepts{
+        font-size: 14px;   
+    }
+}
+
+.contact-details-sm{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.line{
+    margin-top: 14px;
+}
+
+.selector-element{
+    background-color: transparent;
+    border: none;
+    color: #FFFFFF;
+    outline: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    padding-right: 160px; /* Adjust the right padding to add space between text and arrow */
+    background-image: url('data:image/svg+xml;base64,...'); /* Custom arrow (optional) */
+    background-repeat: no-repeat;
+    background-position: right 10px center; /* Position the custom arrow */
+    background-size: 12px;
+}
+
+
+.payments{
+    width: 343px;
+    height: 30px;
+
+}

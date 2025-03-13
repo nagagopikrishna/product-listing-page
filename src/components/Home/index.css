@@ -95,5 +95,15 @@
 .products-container{
     display: flex;
     flex-direction: column;
-    margin-left: 96px;
+    width: 1248px;
+}
+
+@media screen and (max-width: 767px) {
+    .products-container{
+        width: 344px;
+        gap: 16px;
+        padding-top: 16px;
+        padding-bottom: 24px;
+
+    }
 }
