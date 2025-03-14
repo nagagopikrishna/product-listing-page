@@ -6,10 +6,12 @@ import Filters from "../Filters"
 import './index.css'
 import Products from "../Products"
 import Footer from "../Footer"
+import FilterSection from "../FilterSection"
 
 const Home = () =>
 {   
     const [products, setProducts] = useState([])
+    const [filterSection, setFilter] = useState(false)
 
     useEffect(() =>{
         const productsList = async () =>{
@@ -20,7 +22,8 @@ const Home = () =>
         productsList();
     }, [])
 
-    console.log(products)
+    // console.log(products)
+    console.log(filterSection)
     
     return (
 
@@ -32,9 +35,10 @@ const Home = () =>
                 <p className="description"> Lorem ipsum dolor sit amet consectetur. Amet est posuere rhoncus scelerisque. Dolor integer scelerisque nibh amet mi ut elementum dolor.</p>
             </div>
             <div className="filters-section-container">
-                <Filters/>
+                <Filters setFilter = {setFilter} filterValue = {filterSection}/>
             </div>
             <div className="products-container">
+                {filterSection ? <FilterSection/> : ""}
                 <ul className="products-list-container">
                     {
                         products.map((each) =>(

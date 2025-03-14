@@ -3,24 +3,22 @@
     flex-direction: column;
     width: 300px;
     min-height: 462px;
-    top: 652px;
-    left: 96px;
-    margin: 10px;
-    border: 1px solid #888792;
+    margin: 0px;
+    /* border: 1px solid #888792; */
     padding: 5px;
 }
 
 
 
 .product-image{
-    width: 300px;
-    height: 399px;
+    width: 280px;
+    height: 370px;
 }
 
 
 @media screen and (max-width: 767px) {
     .item-container{
-        width: 168px;
+        width: 158px;
         min-height: 277px;
         top: 16px;
         left: 0;
@@ -29,8 +27,8 @@
     }
 
     .product-image{
-        width: 168px;
-        height: 224px;
+        width: 100px;
+        height: 114px;
         top: 16px;
     }
 }
