@@ -36,4 +36,6 @@ To run this project locally, follow these steps:
 ### Notes:
 1. **API Integration**: The product list is populated by calling `https://fakestoreapi.com/products` via a `fetch()` request. You can adapt the API URL or use a mock API for testing.
 2. **Responsive Design**: The project is mobile-first with media queries for responsiveness. Adjustments for tablet and desktop are added.
-3. **Deployment**: Deploy your project using platforms like Vercel or Netlify and provide a live demo URL in the `README.md`.
+3. **Deployment**: Deployed project using platforms Netlify 
+
+## project link --> [Link](https://products-listings-page.netlify.app/)
