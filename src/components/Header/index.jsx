@@ -2,7 +2,7 @@ import {Link} from 'react-router-dom'
 import { HiOutlineShoppingBag } from "react-icons/hi2"
 import { FaRegHeart } from "react-icons/fa";
 import { CgProfile } from "react-icons/cg"
-import { FiSearch } from "react-icons/fi";
+// import { FiSearch } from "react-icons/fi";
 import { RxHamburgerMenu } from "react-icons/rx";
 import './index.css'
 
@@ -29,7 +29,6 @@ const Header = () =>(
         {/* mobile view */}
         <ul className='mobile-view-container'>
             <li>
-                
                 <img src = "https://res.cloudinary.com/ddc7e5e7s/image/upload/v1740804325/element-4_wmceis.png" alt = "image"/>
                 <p> Lorem ipsum dolor </p>
             </li>
@@ -64,7 +63,7 @@ const Header = () =>(
             <div className="logo-container-mobile">
                 <div className="menu-container">
                     <RxHamburgerMenu color="black" size={20}/>
-                    <img src='https://res.cloudinary.com/ddc7e5e7s/image/upload/v1740810655/Logo_pqcdba.png' alt='logo' className="logo-image"/>
+                    <Link to="/"><img src='https://res.cloudinary.com/ddc7e5e7s/image/upload/v1740810655/Logo_pqcdba.png' alt='logo' className="logo-image"/></Link>
                 </div>
                 <h1 className="logo"> LOGO </h1>
                 <ul className="icons-container">
