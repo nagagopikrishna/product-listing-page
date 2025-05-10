@@ -3,10 +3,14 @@ import './index.css'
 
 const Filters = (props) =>{
 
-    const {setFilter, filterValue} = props
+    const {setFilter, filterValue, setSort} = props
 
     const hideFilter = () =>{
         setFilter(!filterValue)
+    }
+
+    const onChangeSort = (event) => {
+        setSort(event.target.value)
     }
     
     return (
@@ -20,12 +24,12 @@ const Filters = (props) =>{
         </div>
         <> <p className="separator"> | </p> </>
         
-        <select className='filter-select-element'>
+        <select className='filter-select-element' onChange={onChangeSort}>
             <option> RECOMMENDED </option>
             <option> NEWEST FIRST </option>
             <option> POPULAR </option>
-            <option> PRICE: HIGH TO LOW </option>
-            <option> PRICE: LOW TO HIGH </option>
+            <option value = "to_low"> PRICE: HIGH TO LOW </option>
+            <option value="to_high"> PRICE: LOW TO HIGH </option>
         </select>
     
     </>
