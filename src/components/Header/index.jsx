@@ -1,4 +1,4 @@
-
+import {Link} from 'react-router-dom'
 import { HiOutlineShoppingBag } from "react-icons/hi2"
 import { FaRegHeart } from "react-icons/fa";
 import { CgProfile } from "react-icons/cg"
@@ -29,6 +29,7 @@ const Header = () =>(
         {/* mobile view */}
         <ul className='mobile-view-container'>
             <li>
+                
                 <img src = "https://res.cloudinary.com/ddc7e5e7s/image/upload/v1740804325/element-4_wmceis.png" alt = "image"/>
                 <p> Lorem ipsum dolor </p>
             </li>
@@ -37,13 +38,13 @@ const Header = () =>(
         <div  className='logo-container'>
             <div className="log-container-tablet">
                 <ul className='logo-details-container'>
-                    <img src='https://res.cloudinary.com/ddc7e5e7s/image/upload/v1740810655/Logo_pqcdba.png' alt='logo' className="logo-image"/>
+                    <Link to="/"><img src='https://res.cloudinary.com/ddc7e5e7s/image/upload/v1740810655/Logo_pqcdba.png' alt='logo' className="logo-image"/></Link>
                     <h1 className="logo"> LOGO </h1>
                     <ul className="icons-container">
-                        <FiSearch size={26} color="black"/>
-                        <FaRegHeart size={26} color="black"/>
-                        <HiOutlineShoppingBag size={26} color="black"/>
-                        <CgProfile size={26} color="black"/>
+                        {/* <FiSearch size={26} color="black"/> */}
+                        <Link to = "/fav"><FaRegHeart size={26} color="black"/></Link>
+                        <Link to="/cart"><HiOutlineShoppingBag size={26} color="black"/></Link>
+                        <Link to="/profile"><CgProfile size={26} color="black"/></Link>
                         <select className="lan-selector">
                             <option value="Eng"> Eng</option>
                             <option value="Tel">Tel</option>
@@ -67,9 +68,10 @@ const Header = () =>(
                 </div>
                 <h1 className="logo"> LOGO </h1>
                 <ul className="icons-container">
-                    <FiSearch size={20} color="black"/>
-                    <FaRegHeart size={20} color="black"/>
-                    <HiOutlineShoppingBag size={20} color="black"/>
+                    {/* <FiSearch size={20} color="black"/> */}
+                    <Link to="/fav"><FaRegHeart size={20} color="black"/></Link>
+                    <Link to="/cart"><HiOutlineShoppingBag size={20} color="black"/></Link>
+                    <Link to="/profile"><CgProfile size={20} color="black"/></Link>
                 </ul>
             </div>
         </div>

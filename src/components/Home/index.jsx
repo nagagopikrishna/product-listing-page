@@ -31,6 +31,7 @@ const Home = () =>
     const [products, setProducts] = useState([])
     const [sort, setSort] = useState("");
     const [filterSection, setFilter] = useState(false)
+    const [searchText, setSearchText] = useState("");
 
     useEffect(() =>{
         const productsList = async () =>{
@@ -53,29 +54,36 @@ const Home = () =>
     //     setSortedProducts(sorted);
     //   }, [sortOption, products]);
 
-    let filteredProducts = products;
+    let filteredSortedProducts = products;
 
     if (sort != "")
     {
-        if (sort === 'to_low') filteredProducts = products.sort(inComparator);
-        else filteredProducts = products.sort(decComparator);
+        if (sort === 'to_high') filteredSortedProducts = products.sort(inComparator);
+        else filteredSortedProducts = products.sort(decComparator);
     }
 
     // console.log(products)
     // console.log(filterSection)
-    console.log(sort);
+    // console.log(sort);
+
+    let filteredProducts = filteredSortedProducts;
+    filteredProducts = filteredSortedProducts.filter((each) =>{
+        const userText = searchText.toLowerCase();
+        const productText= each.title.toLowerCase();
+        return productText.includes(userText);
+    })
     
     return (
 
     <>
-        <Header/>
+        {/* <Header/> */}
         <div className="home-page-container">
             <div className="description-container">
                 <h1 className="heading"> DISCOVER OUR PRODUCTS </h1>
                 <p className="description"> Lorem ipsum dolor sit amet consectetur. Amet est posuere rhoncus scelerisque. Dolor integer scelerisque nibh amet mi ut elementum dolor.</p>
             </div>
             <div className="filters-section-container">
-                <Filters setFilter = {setFilter} filterValue = {filterSection} setSort = {setSort}/>
+                <Filters setFilter = {setFilter} filterValue = {filterSection} setSort = {setSort} setSearchText = {setSearchText}/>
             </div>
             <div className="products-container">
                 {filterSection ? <FilterSection/> : ""}
