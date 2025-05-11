@@ -130,7 +130,7 @@ const Home = () =>
                     {
                         filteredProducts.length === 0 ? (<p className="no-products-found">No products found. Try a different keyword.</p>) :(
                             filteredProducts.map((each) =>(
-                            <Products key={each.id} productsDetails = {each} addItemToCart = {addItemToCart} getFavProduct = {getFavProduct}/>
+                            <Products key={each.id} productsDetails = {each} addItemToCart = {addItemToCart} getFavProduct = {getFavProduct} isFav={favProduct.some(f => f.id === each.id)}/>
                         ))
                         )
                     }

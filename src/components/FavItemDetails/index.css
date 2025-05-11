@@ -1,0 +1,55 @@
+.fav-list-item{
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    width: 65%;
+    border: 1px solid #475569;
+}
+
+@media screen and (max-width: 767px) {
+    .fav-list-item{
+        width: 100%;
+    }
+}
+
+.fav-image{
+    width: 120px;
+}
+
+
+.fav-title{
+    font-size: 24px;
+  font-weight: bold;
+  color: #183B56;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 300px; 
+}
+
+.fav-price{
+    color: #475569;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.remove-button{
+    background-color: transparent;
+    border: 1px solid red;
+    color: red;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    align-self: end;
+}
+
+.fav-items-details{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
