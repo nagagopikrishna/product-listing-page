@@ -10,12 +10,6 @@
     border: 1px solid #475569;
 }
 
-@media screen and (max-width: 767px) {
-    .fav-list-item{
-        width: 100%;
-    }
-}
-
 .fav-image{
     width: 120px;
 }
@@ -46,10 +40,39 @@
     border-radius: 10px;
     font-size: 16px;
     align-self: end;
+    cursor: pointer;
 }
 
 .fav-items-details{
     display: flex;
     flex-direction: column;
     width: 60%;
+}
+
+
+@media screen and (max-width: 767px) {
+    .fav-list-item{
+        width: 90%;
+        margin:10px;
+    }
+
+    .fav-image{
+        width: 70px;
+    }
+
+    .fav-items-details{
+        margin-left: 10px;
+    }
+
+    .fav-title{
+        font-size: 14px;
+    }
+
+    .fav-price{
+        font-size: 10px;
+    }
+
+    .remove-button{
+        font-size: 10px;
+    }
 }

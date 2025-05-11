@@ -23,7 +23,7 @@ const Products = (props) =>{
                 <div className="sub-item-description">
                     <img src={image} alt={title} className='product-image'/>
                     {/* <AiFillHeart color={"#292D32"} size={20} onClick={addToFav} style={{ color: isFav ? "red" : "gray" , cursor: "pointer"}}/> */}
-                    {isFav ? (<AiFillHeart style={{ color: "red" }} color={"#292D32"} size={20} onClick={addToFav} />) : (<AiOutlineHeart color={"#292D32"} size={20} onClick={addToFav} style={{ color: "gray" }} />)}
+                    {isFav ? (<AiFillHeart style={{ color: "red", cursor: "pointer" }} color={"#292D32"} size={20} onClick={addToFav} />) : (<AiOutlineHeart color={"#292D32"} size={20} onClick={addToFav} style={{ color: "gray", cursor: "pointer" }} />)}
 
                 </div>
                 <h1 className='product-name'>{title}</h1>
