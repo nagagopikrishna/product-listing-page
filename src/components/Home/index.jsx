@@ -30,16 +30,33 @@ const Home = () =>
     const [sort, setSort] = useState("");
     const [filterSection, setFilter] = useState(false)
     const [searchText, setSearchText] = useState("");
+    const [favProduct, setFavProduct] = useState(() =>{
+        const items = localStorage.getItem("fav");
+        return items ? JSON.parse(items) : []
+    });
+
     const [cartItems, setCartItems] = useState(() => {
-    try {
-        const items = localStorage.getItem("cart");
-        return items ? JSON.parse(items) : [];
-    } catch (e) {
-        console.error("Corrupted cart in localStorage. Resetting...", e);
-        localStorage.removeItem("cart");
-        return [];
+        try {
+            const items = localStorage.getItem("cart");
+            return items ? JSON.parse(items) : [];
+        } catch (e) {
+            console.error("Corrupted cart in localStorage. Resetting...", e);
+            localStorage.removeItem("cart");
+            return [];
+        }
+    });
+
+
+    const getFavProduct = (id) =>{
+        let userFavProduct = products.find((each) => each.id === id);
+        // setFavProduct((prev) => [...prev, userFavProduct]);
+        setFavProduct((prev) =>(
+            prev.find((fav) => fav.id === id) ? prev.filter((fav) => fav.id !== id) : [...prev, userFavProduct]
+        ))
     }
-});
+
+    // console.log(favProduct)
+
 
     const addItemToCart = (id) => {
         const product = products.find((each) => each.id === id);
@@ -48,9 +65,16 @@ const Home = () =>
         );
     };
 
+    
     useEffect(() =>{
         localStorage.setItem("cart", JSON.stringify(cartItems));
     }, [cartItems])
+
+
+    useEffect(() =>{
+        localStorage.setItem("fav", JSON.stringify(favProduct));
+    }, [favProduct]);
+
 
     useEffect(() =>{
         const productsList = async () =>{
@@ -79,6 +103,8 @@ const Home = () =>
         const productText= each.title.toLowerCase();
         return productText.includes(userText);
     })
+
+    
     
     return (
 
@@ -95,10 +121,18 @@ const Home = () =>
             <div className="products-container">
                 {filterSection ? <FilterSection/> : ""}
                 <ul className="products-list-container">
-                    {
+                    {/* {
                         filteredProducts.map((each) =>(
                             <Products key={each.id} productsDetails = {each} addItemToCart = {addItemToCart}/>
                         ))
+                    } */}
+
+                    {
+                        filteredProducts.length === 0 ? (<p className="no-products-found">No products found. Try a different keyword.</p>) :(
+                            filteredProducts.map((each) =>(
+                            <Products key={each.id} productsDetails = {each} addItemToCart = {addItemToCart} getFavProduct = {getFavProduct}/>
+                        ))
+                        )
                     }
                 </ul>
             </div>
