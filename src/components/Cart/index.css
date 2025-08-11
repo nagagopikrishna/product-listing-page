@@ -48,3 +48,127 @@
         text-align: center;
     }
 }
+
+.cart-container-products{
+    background-color: #F8FAFC;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border: 1px solid #0B69FF1A;
+    margin: 40px;
+    margin-left: 80px;
+    margin-right: 80px;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 767px){
+    .cart-container-products{
+        margin: 10px;
+
+    }
+}
+
+.cart-heading{
+    color: #334155;
+}
+
+.cart-item-image{
+    width: 120px;
+}
+
+
+.cart-product-title{
+    font-size: 24px;
+  font-weight: bold;
+  color: #183B56;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 300px; 
+}
+
+.cart-product-price{
+    color: #475569;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.cart-product-remove-button{
+    background-color: transparent;
+    border: 1px solid red;
+    color: red;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    align-self: end;
+    cursor: pointer;
+}
+
+.fav-items-details{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+
+@media screen and (max-width: 767px) {
+    .fav-list-item{
+        width: 90%;
+        margin:10px;
+    }
+
+    .cart-item-image{
+        width: 70px;
+    }
+
+    .fav-items-details{
+        margin-left: 10px;
+    }
+
+    .cart-product-title{
+        font-size: 14px;
+    }
+
+    .cart-product-price{
+        font-size: 10px;
+    }
+
+    .cart-product-remove-button{
+        font-size: 10px;
+    }
+    .cart-heading{
+        font-size: 20px;
+    }
+}
+
+.cart-list-headings-container{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.cart-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.quantity{
+    color: black;
+}
+
+.quantity-controls{
+    display: flex;
+    gap: 10px;
+}
+
+.price-line{
+    color: #334155;
+}
+
+.total-price{
+    align-self: flex-end;
+    color: #334155;
+}
